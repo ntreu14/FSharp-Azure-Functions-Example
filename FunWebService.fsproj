@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+    <RootNamespace>FunWebService</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="WebJobsStartup.fs" />
+    <Compile Include="Dtos.fs" />
+    <Compile Include="Storage.fs" />
+    <Compile Include="Apis.fs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="FSharp.Data" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Azure.Cosmos.Table" Version="1.0.4" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.28" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

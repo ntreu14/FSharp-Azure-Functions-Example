@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="GenPersonData.fs" />
+    <Compile Include="Specs.fs" />
+    <Compile Include="Main.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Expecto" Version="8.11.0" />
+    <PackageReference Include="Expecto.FsCheck" Version="8.11.0" />
+    <PackageReference Include="FSharp.Data" Version="3.1.1" />
+  </ItemGroup>
+
+</Project>
