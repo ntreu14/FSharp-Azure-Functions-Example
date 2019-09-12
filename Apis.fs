@@ -1,6 +1,6 @@
 ﻿namespace FunWebService
 
-module PostSuperheroData =
+module Apis =
   open System.Net.Http
   open Microsoft.Azure.WebJobs
   open Microsoft.Azure.WebJobs.Extensions.Http
