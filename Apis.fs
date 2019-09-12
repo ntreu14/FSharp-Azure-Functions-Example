@@ -5,7 +5,7 @@ module Apis =
   open Microsoft.Azure.WebJobs
   open Microsoft.Azure.WebJobs.Extensions.Http
   open Microsoft.Extensions.Logging
-  open Microsoft.AspNetCore.Mvc;
+  open Microsoft.AspNetCore.Mvc
   open Dtos
   open Storage
   open Microsoft.Azure.Cosmos.Table
